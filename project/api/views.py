@@ -21,8 +21,45 @@ class User(APIView):
 
 class FreebieRequest(APIView):
 
-    def get(self, request, format=None):
+    def post(self, request, format=None):
+        print(request.data)
+        userData = request.data
+        userId = userData["user"]
+        token = userData["token"]
+        auth = methods.verify(userId, token)
+        print(auth)
+        api_result = {"status":"success"}
+        if(auth):
+            requestsJson = methods.getRequests(userId)
+            api_result["data"]=requestsJson
+        return Response(api_result)
 
-        # View Logic Here
-        api_result = {"key_1":"val_1", "key_2":"val_2"}
+class Approval(APIView):
+    def post(self, request, format=None):
+        userData = request.data
+        userId = userData["user"]
+        token = userData["token"]
+        id = userData["id"]
+        status = userData["status"]
+        auth = methods.verify(userId, token)
+        print(auth)
+        if(auth):
+            print(id)
+            methods.updateRequest(id, status)
+        api_result = {"status":"success"}
+        return Response(api_result)
+
+class Insert(APIView):
+    def post(self, request, format=None):
+        userData = request.data
+        userId = userData["user"]
+        token = userData["token"]
+        id = userData["id"]
+        status = userData["status"]
+        auth = methods.verify(userId, token)
+        print(auth)
+        if(auth):
+            print(id)
+            methods.updateRequest(id, status)
+        api_result = {"status":"success"}
         return Response(api_result)
