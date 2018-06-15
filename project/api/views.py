@@ -43,23 +43,18 @@ class Approval(APIView):
         status = userData["status"]
         auth = methods.verify(userId, token)
         print(auth)
+        api_result = {}
         if(auth):
             print(id)
             methods.updateRequest(id, status)
-        api_result = {"status":"success"}
+            api_result["status"] = "success"
+        else:
+            api_result["status"] = "failure"
         return Response(api_result)
 
 class Insert(APIView):
     def post(self, request, format=None):
-        userData = request.data
-        userId = userData["user"]
-        token = userData["token"]
-        id = userData["id"]
-        status = userData["status"]
-        auth = methods.verify(userId, token)
-        print(auth)
-        if(auth):
-            print(id)
-            methods.updateRequest(id, status)
-        api_result = {"status":"success"}
+        data = request.data
+        methods.addRequest(data)
+        api_result={"status":"success"}
         return Response(api_result)

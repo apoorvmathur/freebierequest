@@ -78,3 +78,12 @@ class methods:
         cursor = tasks.getDBCursor()
         cursor.execute("UPDATE freebie.Requests SET status = %(status)s WHERE id = %(id)s", {"status":status, "id":requestId})
         cursor.close()
+
+    def addRequest(requestData):
+        cursor = tasks.getDBCursor()
+        query = """INSERT INTO freebie.Requests (agent_name,category,account_phone,sales_date,activation_date,sales_amount,
+        prev_sales,discount_amount,discount_percent,alternate_number,discussion_details,status)
+        VALUES (%(agent_name)s,%(category)s,%(account_phone)s,%(sales_date)s,%(activation_date)s,%(sales_amount)s,
+        %(prev_sales)s,%(discount_amount)s,%(discount_percent)s,%(alternate_number)s,%(discussion_details)s,%(status)s)"""
+        cursor.execute(query,requestData)
+        cursor.close()
