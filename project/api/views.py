@@ -41,12 +41,13 @@ class Approval(APIView):
         token = userData["token"]
         id = userData["id"]
         status = userData["status"]
+        comment = userData["comment"]
         auth = methods.verify(userId, token)
         print(auth)
         api_result = {}
         if(auth):
             print(id)
-            methods.updateRequest(id, status)
+            methods.updateRequest(id, status, comment)
             api_result["status"] = "success"
         else:
             api_result["status"] = "failure"
@@ -57,4 +58,10 @@ class Insert(APIView):
         data = request.data
         methods.addRequest(data)
         api_result={"status":"success"}
+        return Response(api_result)
+
+class Agents(APIView):
+    def post(self, request, format=None):
+        agents = methods.getAgents()
+        api_result={"status":"success", "agents":agents}
         return Response(api_result)

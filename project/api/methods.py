@@ -37,7 +37,8 @@ class methods:
                 "discount_percent":float(result[9]),
                 "alternate_number":result[10],
                 "discussion_details":result[11],
-                "status":result[12]
+                "status":result[12],
+                "comment":result[13]
             }
             outJSON.append(row)
         return outJSON
@@ -53,30 +54,25 @@ class methods:
             cursor.execute("""select * from freebie.requests a 
                 left join freebie.agents b
                 on a.agent_name = b.agent
-                where a.status = 'Pending'
-                and b.team_lead = %(username)s
-                and discount_percent <= %(discount)s""", {"username":userId, "discount":5})
+                where b.team_lead = %(username)s""", {"username":userId})
         if level == 2:
             print("Level: 2")
             cursor.execute("""select * from freebie.requests a 
-                where a.status = 'Pending'
-                and a.discount_percent > %(discount_low)s
-                and a.discount_percent <= %(discount_high)s""", {"discount_low":5, "discount_high":10})
+                left join freebie.agents b
+                on a.agent_name = b.agent
+                where b.manager = %(username)s""", {"username":userId})
         if level == 3:
             print("Level: 3")
-            cursor.execute("""select * from freebie.requests a 
-                where a.status = 'Pending'
-                and a.discount_percent > %(discount_low)s
-                and a.discount_percent <= %(discount_high)s""", {"discount_low":10, "discount_high":100})
+            cursor.execute("select * from freebie.requests a")
         result = cursor.fetchall()
         cursor.close()
-        print(result)
         json_result = methods.convertToJSON(result)
+        json_result = methods.getActions(level, json_result)
         return json_result
 
-    def updateRequest(requestId, status):
+    def updateRequest(requestId, status, comment):
         cursor = tasks.getDBCursor()
-        cursor.execute("UPDATE freebie.Requests SET status = %(status)s WHERE id = %(id)s", {"status":status, "id":requestId})
+        cursor.execute("UPDATE freebie.Requests SET status = %(status)s, comment = %(comment)s WHERE id = %(id)s", {"status":status, "comment":comment, "id":requestId})
         cursor.close()
 
     def addRequest(requestData):
@@ -87,3 +83,26 @@ class methods:
         %(prev_sales)s,%(discount_amount)s,%(discount_percent)s,%(alternate_number)s,%(discussion_details)s,%(status)s)"""
         cursor.execute(query,requestData)
         cursor.close()
+
+    def getAgents():
+        cursor = tasks.getDBCursor()
+        cursor.execute("SELECT agent FROM Freebie.Agents")
+        agents = cursor.fetchall()
+        cursor.close()
+        agent_list = [i[0] for i in agents]
+        return agent_list;
+    
+    def getActions(userlevel, results):
+        for result in results:
+            print(result)
+            if result['status'] != 'Pending':
+                result['action'] = False
+            elif userlevel == 1 and result['discount_percent'] <= 15:
+                result['action'] = True
+            elif userlevel == 2 and result['discount_percent'] <= 25:
+                result['action'] = True
+            elif userlevel == 3:
+                result['action'] = True
+            else:
+                result['action'] = False
+        return results

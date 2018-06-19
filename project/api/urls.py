@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^request/', views.FreebieRequest.as_view()),
     url(r'^update/', views.Approval.as_view()),
     url(r'^insert/', views.Insert.as_view()),
+    url(r'^agents/', views.Agents.as_view()),
 ]
