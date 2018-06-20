@@ -28,7 +28,7 @@ $(document).ready(function(){
 	
 	console.log("Fetching agents")
 	
-	$.post("http://127.0.0.1:8000/agents/",{}, function(data, status) {
+	$.post("http://192.168.133.169:8000/agents/",{}, function(data, status) {
 		agent_list = data.agents;
 		console.log(agent_list)
 		for(i in agent_list){
@@ -167,7 +167,7 @@ $(document).ready(function(){
 		request_param["alternate_number"]=alternate_numbers_string
 		request_param["status"]="Pending"
 		
-		$.post("http://127.0.0.1:8000/insert/", request_param, function(data, status){
+		$.post("http://192.168.133.169:8000/insert/", request_param, function(data, status){
 			$("#success-section").show();
 			$("#form-section").hide();
 		})
