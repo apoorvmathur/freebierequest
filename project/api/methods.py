@@ -4,7 +4,7 @@ from datetime import datetime
 class methods:
     def authenticate(user, password):
         cursor = tasks.getDBCursor()
-        cursor.execute("SELECT * FROM Freebie.Users WHERE username = %(username)s", {"username":user})
+        cursor.execute("SELECT * FROM pms.Freebie_Users WHERE username = %(username)s", {"username":user})
         result = cursor.fetchone()
         cursor.close()
         if result:
@@ -14,7 +14,7 @@ class methods:
 
     def verify(user, token):
         cursor = tasks.getDBCursor()
-        cursor.execute("SELECT * FROM Freebie.Sessions where username = %(username)s", {"username":user})
+        cursor.execute("SELECT * FROM pms.Freebie_Sessions where username = %(username)s", {"username":user})
         result = cursor.fetchone()
         cursor.close()
         if result:
@@ -50,25 +50,25 @@ class methods:
 
     def getRequests(userId):
         cursor = tasks.getDBCursor()
-        cursor.execute("SELECT userlevel FROM Freebie.Users where username = %(username)s", {"username":userId})
+        cursor.execute("SELECT userlevel FROM pms.Freebie_Users where username = %(username)s", {"username":userId})
         user = cursor.fetchone()
         print(user)
         level = user[0]
         if level == 1:
             print("Level: 1")
-            cursor.execute("""select * from Freebie.Requests a 
-                left join Freebie.Agents b
+            cursor.execute("""select * from pms.Freebie_Requests a 
+                left join pms.Freebie_Agents b
                 on a.agent_name = b.agent
                 where b.team_lead = %(username)s""", {"username":userId})
         if level == 2:
             print("Level: 2")
-            cursor.execute("""select * from Freebie.Requests a 
-                left join Freebie.Agents b
+            cursor.execute("""select * from pms.Freebie_Requests a 
+                left join pms.Freebie_Agents b
                 on a.agent_name = b.agent
                 where b.manager = %(username)s""", {"username":userId})
         if level == 3:
             print("Level: 3")
-            cursor.execute("select * from Freebie.Requests a")
+            cursor.execute("select * from pms.Freebie_Requests a")
         result = cursor.fetchall()
         cursor.close()
         json_result = methods.convertToJSON(result)
@@ -77,7 +77,7 @@ class methods:
 
     def updateRequest(requestId, status, comment, user):
         cursor = tasks.getDBCursor()
-        cursor.execute("UPDATE Freebie.Requests SET status = %(status)s, comment = %(comment)s, updated_by = %(updated_by)s WHERE id = %(id)s", {"status":status, "comment":comment, "updated_by":user, "id":requestId})
+        cursor.execute("UPDATE pms.Freebie_Requests SET status = %(status)s, comment = %(comment)s, updated_by = %(updated_by)s WHERE id = %(id)s", {"status":status, "comment":comment, "updated_by":user, "id":requestId})
         cursor.close()
 
     def addRequest(requestData):
@@ -89,13 +89,13 @@ class methods:
         print(requestParam)
         requestParam["created_at"] = str(datetime.now())
         if float(requestData["discount_percent"]) <= 10:
-            query = """INSERT INTO Freebie.Requests (created_at,agent_name,category,user_id,account_phone,sales_date,activation_date,
+            query = """INSERT INTO pms.Freebie_Requests (created_at,agent_name,category,user_id,account_phone,sales_date,activation_date,
             sales_amount,prev_sales,discount_amount,discount_percent,alternate_number,discussion_details,status, updated_by)
             VALUES (%(created_at)s,%(agent_name)s,%(category)s,%(user_id)s,%(account_phone)s,%(sales_date)s,%(activation_date)s,
             %(sales_amount)s,%(prev_sales)s,%(discount_amount)s,%(discount_percent)s,%(alternate_number)s,
             %(discussion_details)s,'Approved','AutoApproval')"""
         else:
-            query = """INSERT INTO Freebie.Requests (created_at,agent_name,category,user_id,account_phone,sales_date,activation_date,
+            query = """INSERT INTO pms.Freebie_Requests (created_at,agent_name,category,user_id,account_phone,sales_date,activation_date,
             sales_amount,prev_sales,discount_amount,discount_percent,alternate_number,discussion_details,status)
             VALUES (%(created_at)s,%(agent_name)s,%(category)s,%(user_id)s,%(account_phone)s,%(sales_date)s,%(activation_date)s,
             %(sales_amount)s,%(prev_sales)s,%(discount_amount)s,%(discount_percent)s,%(alternate_number)s,%(discussion_details)s,
@@ -105,7 +105,7 @@ class methods:
 
     def getAgents():
         cursor = tasks.getDBCursor()
-        cursor.execute("SELECT agent FROM Freebie.Agents")
+        cursor.execute("SELECT agent FROM pms.Freebie_Agents")
         agents = cursor.fetchall()
         cursor.close()
         agent_list = [i[0] for i in agents]
