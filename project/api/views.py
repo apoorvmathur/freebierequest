@@ -47,7 +47,7 @@ class Approval(APIView):
         api_result = {}
         if(auth):
             print(id)
-            methods.updateRequest(id, status, comment)
+            methods.updateRequest(id, status, comment, userId)
             api_result["status"] = "success"
         else:
             api_result["status"] = "failure"

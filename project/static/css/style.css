@@ -1,0 +1,68 @@
+#top-bar {
+	display:block;
+	height:287px;
+	width:100%;
+	top:0px;
+	position:absolute;
+	background-color:rgb(103, 58, 183);
+}
+
+.main-container {
+	position:relative;
+	top:200px;
+	min-height:200px;
+}
+
+.form-card {
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+	height:100%
+}
+
+body {
+	background-color:#ede7f6;
+}
+
+.band {
+	display:block;
+	position:absolute;
+	margin:0;
+	padding:0;
+	width:100%;
+	min-height:10px;
+	background-color:rgb(179, 136, 255);
+}
+
+.card {
+	box-shadow:none;
+}
+
+.bar {
+	display:inline-block;
+	position:relative;
+	margin-top:4px;
+	margin-bottom:4px;
+	padding:0;
+	width:100%;
+	min-height:80px;
+	background-color:rgb(88, 54, 150);
+	left:0;
+}
+
+.freebie-container {
+	position:relative;
+	top:50px;
+}
+
+.custom-card {
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.footer {
+	bottom:0px;
+	width:100%;
+	position:relative;
+}

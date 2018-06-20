@@ -1,9 +1,10 @@
 from project.api.tasks import tasks
+from datetime import datetime
 
 class methods:
     def authenticate(user, password):
         cursor = tasks.getDBCursor()
-        cursor.execute("SELECT * FROM freebie.Users WHERE username = %(username)s", {"username":user})
+        cursor.execute("SELECT * FROM Freebie.Users WHERE username = %(username)s", {"username":user})
         result = cursor.fetchone()
         cursor.close()
         if result:
@@ -13,7 +14,7 @@ class methods:
 
     def verify(user, token):
         cursor = tasks.getDBCursor()
-        cursor.execute("SELECT * FROM freebie.Sessions where username = %(username)s", {"username":user})
+        cursor.execute("SELECT * FROM Freebie.Sessions where username = %(username)s", {"username":user})
         result = cursor.fetchone()
         cursor.close()
         if result:
@@ -22,23 +23,27 @@ class methods:
         return False
 
     def convertToJSON(result_set):
+        print(result_set)
         outJSON = []
         for result in result_set:
             row = {
-                "id":result[0],
-                "agent_name":result[1],
-                "category":result[2],
-                "account_phone":result[3],
-                "sales_date":result[4],
-                "activation_date":result[5],
-                "sales_amount":result[6],
-                "prev_sales":result[7],
-                "discount_amount":result[8],
-                "discount_percent":float(result[9]),
-                "alternate_number":result[10],
-                "discussion_details":result[11],
-                "status":result[12],
-                "comment":result[13]
+                "created_at":result[0],
+                "id":result[1],
+                "agent_name":result[2],
+                "category":result[3],
+                "user_id":result[4],
+                "account_phone":result[5],
+                "sales_date":result[6],
+                "activation_date":result[7],
+                "sales_amount":result[8],
+                "prev_sales":result[9],
+                "discount_amount":result[10],
+                "discount_percent":float(result[11]),
+                "alternate_number":result[12],
+                "discussion_details":result[13],
+                "status":result[14],
+                "comment":result[15],
+                "updated_by":result[16]
             }
             outJSON.append(row)
         return outJSON
@@ -51,37 +56,51 @@ class methods:
         level = user[0]
         if level == 1:
             print("Level: 1")
-            cursor.execute("""select * from freebie.requests a 
-                left join freebie.agents b
+            cursor.execute("""select * from Freebie.Requests a 
+                left join Freebie.Agents b
                 on a.agent_name = b.agent
                 where b.team_lead = %(username)s""", {"username":userId})
         if level == 2:
             print("Level: 2")
-            cursor.execute("""select * from freebie.requests a 
-                left join freebie.agents b
+            cursor.execute("""select * from Freebie.Requests a 
+                left join Freebie.Agents b
                 on a.agent_name = b.agent
                 where b.manager = %(username)s""", {"username":userId})
         if level == 3:
             print("Level: 3")
-            cursor.execute("select * from freebie.requests a")
+            cursor.execute("select * from Freebie.Requests a")
         result = cursor.fetchall()
         cursor.close()
         json_result = methods.convertToJSON(result)
         json_result = methods.getActions(level, json_result)
         return json_result
 
-    def updateRequest(requestId, status, comment):
+    def updateRequest(requestId, status, comment, user):
         cursor = tasks.getDBCursor()
-        cursor.execute("UPDATE freebie.Requests SET status = %(status)s, comment = %(comment)s WHERE id = %(id)s", {"status":status, "comment":comment, "id":requestId})
+        cursor.execute("UPDATE Freebie.Requests SET status = %(status)s, comment = %(comment)s, updated_by = %(updated_by)s WHERE id = %(id)s", {"status":status, "comment":comment, "updated_by":user, "id":requestId})
         cursor.close()
 
     def addRequest(requestData):
         cursor = tasks.getDBCursor()
-        query = """INSERT INTO freebie.Requests (agent_name,category,account_phone,sales_date,activation_date,sales_amount,
-        prev_sales,discount_amount,discount_percent,alternate_number,discussion_details,status)
-        VALUES (%(agent_name)s,%(category)s,%(account_phone)s,%(sales_date)s,%(activation_date)s,%(sales_amount)s,
-        %(prev_sales)s,%(discount_amount)s,%(discount_percent)s,%(alternate_number)s,%(discussion_details)s,%(status)s)"""
-        cursor.execute(query,requestData)
+        timestamp = str(datetime.now())
+        requestParam = {}
+        for key in requestData:
+            requestParam[key] = requestData[key]
+        print(requestParam)
+        requestParam["created_at"] = str(datetime.now())
+        if float(requestData["discount_percent"]) <= 10:
+            query = """INSERT INTO Freebie.Requests (created_at,agent_name,category,user_id,account_phone,sales_date,activation_date,
+            sales_amount,prev_sales,discount_amount,discount_percent,alternate_number,discussion_details,status, updated_by)
+            VALUES (%(created_at)s,%(agent_name)s,%(category)s,%(user_id)s,%(account_phone)s,%(sales_date)s,%(activation_date)s,
+            %(sales_amount)s,%(prev_sales)s,%(discount_amount)s,%(discount_percent)s,%(alternate_number)s,
+            %(discussion_details)s,'Approved','AutoApproval')"""
+        else:
+            query = """INSERT INTO Freebie.Requests (created_at,agent_name,category,user_id,account_phone,sales_date,activation_date,
+            sales_amount,prev_sales,discount_amount,discount_percent,alternate_number,discussion_details,status)
+            VALUES (%(created_at)s,%(agent_name)s,%(category)s,%(user_id)s,%(account_phone)s,%(sales_date)s,%(activation_date)s,
+            %(sales_amount)s,%(prev_sales)s,%(discount_amount)s,%(discount_percent)s,%(alternate_number)s,%(discussion_details)s,
+            %(status)s)"""
+        cursor.execute(query,requestParam)
         cursor.close()
 
     def getAgents():
@@ -97,9 +116,9 @@ class methods:
             print(result)
             if result['status'] != 'Pending':
                 result['action'] = False
-            elif userlevel == 1 and result['discount_percent'] <= 15:
+            elif userlevel == 1 and float(result['discount_percent']) <= 15:
                 result['action'] = True
-            elif userlevel == 2 and result['discount_percent'] <= 25:
+            elif userlevel == 2 and float(result['discount_percent']) <= 25:
                 result['action'] = True
             elif userlevel == 3:
                 result['action'] = True

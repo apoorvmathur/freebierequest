@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap-select.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
+	</head>
+	<body>
+		<div id="top-bar"></div>
+		<div class="container main-container" id="success-section">
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8 card p-0">
+					<div class="form-card px-5">
+						<legend class="p-5">Your response has been submitted</legend>
+						<div class="btn btn-outline-primary m-5" id="reset-form">Reset Form<i class="fa fa-undo ml-2"></i></div>
+					</div>
+				</div>
+				<div class="col-md-2">
+			</div>
+		</div><!--/row-->
+		</div><!--container-->
+		<div class="container main-container" id="form-section">
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8 card p-0">
+				<div class="band"></div>
+				<div class="form-card">
+					<form id="main-form">
+						<fieldset>
+							<legend class="px-5 pt-5">FreeBie Approval Requisition</legend>
+							<p class="my-3 px-5">Agents need to fill up this form to get approval for activating any freebie in account</p>
+							<div class="form-group px-5">
+								<label class="col-form-label" for="agent_name">Agent Name</label>
+								<select class="custom-select" id="agent_name">
+								  <option selected="">Agent Name</option>
+								</select>
+								
+								<label class="col-form-label" for="category">Select Category</label>
+								<select class="custom-select" id="category">
+								  <option selected="">Category</option>
+								  <option value="Real Estate">Real Estate</option>
+								  <option value="Jobs">Jobs</option>
+								  <option value="Fashion">Fashion</option>
+								  <option value="Electronics & Appliances">Electronics & Appliances</option>
+								  <option value="Furniture">Furniture</option>
+								  <option value="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+								  <option value="Mobiles">Mobiles</option>
+								  <option value="Bikes">Bikes</option>
+								</select>
+								
+								<label class="col-form-label" for="user_id">User ID</label>
+								<input type="text" class="form-control" id="user_id" placeholder="Customer User ID">
+								
+								<label class="col-form-label" for="account_phone">Account Phone Number</label>
+								<input type="text" class="form-control" id="account_phone" placeholder="Account Phone Number">
+								
+							</div>
+							<div class="bar">
+								<legend class="px-5 pt-4 text-secondary">Sales Details</legend>
+							</div>
+							<div class="form-group px-5">
+								<label class="col-form-label" for="sales_date">Sales Date</label>
+								<input class="form-control" id="sales_date" placeholder="DD/MM/YYY" type="text"/>
+								
+								<label class="col-form-label" for="activation_date">FreeBie Activation Date</label>
+								<input class="form-control" id="activation_date" placeholder="DD/MM/YYY" type="text"/>
+								
+								<label class="col-form-label" for="sales_amount">Sales Amount</label>
+								<input type="text" class="form-control" id="sales_amount" placeholder="Sales Amount">
+								
+								<label class="col-form-label" for="previous_sales">Previous Sales</label>
+								<input type="text" class="form-control" id="previous_sales" placeholder="Previous Sales">
+								
+								<label class="col-form-label" for="discount_amount">Discount Amount</label>
+								<input type="text" class="form-control" id="discount_amount" placeholder="Discount Amount">
+								
+								<label class="col-form-label" for="discount_percent">Discount %</label>
+								<input type="text" class="form-control" readonly="" id="discount_percent" placeholder="%">
+								
+							</div>
+							<div class="bar">
+								<legend class="px-5 pt-4 text-secondary">Alternate Phone Details</legend>
+							</div>
+							<div class="form-group px-5">
+								<div id="alternate-phone-div"></div>
+								
+								<div class="btn btn-outline-primary mt-3" id="add-number">Add Alternate Number<i class="fa fa-plus-circle ml-2"></i></div>
+								<br><br>
+							</div>
+							<div class="bar">
+								<legend class="px-5 pt-4 text-secondary">Discussion Details</legend>
+							</div>
+							<div class="form-group px-5">
+								<label class="col-form-label" for="discussion_details">Discussion Details</label>
+								<textarea class="form-control" id="discussion_details" rows="3"></textarea>
+								<br><br>
+								<div class="btn btn-primary" id="submit-button">Submit</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-md-2">
+				</div>
+				</div>
+			</div>
+			<!--/row-->
+		</div>
+		<!--container-->
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+		<div class="text-center my-2 text-muted">© OLX India 2018</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+		<script src="js/bootstrap-select.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

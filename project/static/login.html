@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
+	</head>
+	<body>
+		<div class="container freebie-container">
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4 card p-0">
+					<div class="form-card p-4">
+						<legend class="py-2 text-center">Login</legend>
+						<form id="login-form">
+						<div class="form-group">
+						  <input type="text" class="form-control" id="login" placeholder="Username">
+						</div>
+						<div class="form-group">
+						  <input type="password" class="form-control" id="password" placeholder="Password">
+						</div>
+						<div class="alert alert-dismissible alert-danger" id="invalid-alert">
+						  Username or password is invalid.
+						</div>
+						<button type="submit" class="btn btn-primary" id="submit-button">Login</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<!--/row-->
+		</div>
+		<!--container-->
+		<div class="text-center text-muted page-footer">© OLX India 2018</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+		<script src="js/login.js"></script>
+	</body>
+</html>
