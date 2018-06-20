@@ -15,9 +15,10 @@ $(document).ready(function(){
 		console.log(user)
 		
 		password=$("#password", $("#login-form")).val()
-		console.log(password)
+		pass = $.sha1(password)
+		console.log(pass)
 		
-		$.post("http://127.0.0.1:8000/user/", {user: user, password:password}, function(data, status){
+		$.post("http://192.168.133.169:8000/user/", {user: user, password:pass}, function(data, status){
 			console.log(data)
 			
 			if(data["auth"]) {
