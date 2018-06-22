@@ -10,7 +10,6 @@ from project.api.tasks import tasks
 
 class User(APIView):
     def post(self, request, format=None):
-        print(request.data)
         userData = request.data
         auth = methods.authenticate(userData["user"], userData["password"])
         api_result = {"auth":auth}
@@ -22,12 +21,10 @@ class User(APIView):
 class FreebieRequest(APIView):
 
     def post(self, request, format=None):
-        print(request.data)
         userData = request.data
         userId = userData["user"]
         token = userData["token"]
         auth = methods.verify(userId, token)
-        print(auth)
         api_result = {"status":"success"}
         if(auth):
             requestsJson = methods.getRequests(userId)
@@ -43,7 +40,6 @@ class Approval(APIView):
         status = userData["status"]
         comment = userData["comment"]
         auth = methods.verify(userId, token)
-        print(auth)
         api_result = {}
         if(auth):
             print(id)

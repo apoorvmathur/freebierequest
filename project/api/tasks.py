@@ -7,7 +7,7 @@ connection = None
 class tasks:
     def getDBCursor():
         global connection
-        if (connection == None) or (connection.closed == 0):
+        if (connection == None) or (connection.closed == 1):
             #connection = ps2.connect(dbname="testdb", user="postgres", password="apoorvmathur", host="127.0.0.1", port=5432)
             connection = sql.connect(user="biindia", password="299A9052D0E6", host="pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com", port=3306)
             connection.autocommit(True)

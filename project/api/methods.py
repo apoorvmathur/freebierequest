@@ -4,7 +4,7 @@ from datetime import datetime
 class methods:
     def authenticate(user, password):
         cursor = tasks.getDBCursor()
-        cursor.execute("SELECT * FROM pms.Freebie_Users WHERE username = %(username)s", {"username":user})
+        cursor.execute("SELECT * FROM pms.Freebie_Users WHERE username = %(username)s OR email = %(username)s", {"username":user})
         result = cursor.fetchone()
         cursor.close()
         if result:
@@ -23,7 +23,6 @@ class methods:
         return False
 
     def convertToJSON(result_set):
-        print(result_set)
         outJSON = []
         for result in result_set:
             row = {
@@ -52,22 +51,23 @@ class methods:
         cursor = tasks.getDBCursor()
         cursor.execute("SELECT userlevel FROM pms.Freebie_Users where username = %(username)s", {"username":userId})
         user = cursor.fetchone()
-        print(user)
         level = user[0]
+        if level == 0:
+            cursor.execute("""select * from pms.Freebie_Requests a
+                left join pms.Freebie_Agents b
+                on a.agent_name = b.agent
+                where b.team_lead = %(username)s""", {"username":userId})
         if level == 1:
-            print("Level: 1")
             cursor.execute("""select * from pms.Freebie_Requests a 
                 left join pms.Freebie_Agents b
                 on a.agent_name = b.agent
                 where b.team_lead = %(username)s""", {"username":userId})
         if level == 2:
-            print("Level: 2")
             cursor.execute("""select * from pms.Freebie_Requests a 
                 left join pms.Freebie_Agents b
                 on a.agent_name = b.agent
                 where b.manager = %(username)s""", {"username":userId})
         if level == 3:
-            print("Level: 3")
             cursor.execute("select * from pms.Freebie_Requests a")
         result = cursor.fetchall()
         cursor.close()
@@ -86,7 +86,6 @@ class methods:
         requestParam = {}
         for key in requestData:
             requestParam[key] = requestData[key]
-        print(requestParam)
         requestParam["created_at"] = str(datetime.now())
         if float(requestData["discount_percent"]) <= 10:
             query = """INSERT INTO pms.Freebie_Requests (created_at,agent_name,category,user_id,account_phone,sales_date,activation_date,
@@ -113,8 +112,7 @@ class methods:
     
     def getActions(userlevel, results):
         for result in results:
-            print(result)
-            if result['status'] != 'Pending':
+            if result['status'] != 'Pending' or userlevel == 0:
                 result['action'] = False
             elif userlevel == 1 and float(result['discount_percent']) <= 15:
                 result['action'] = True
