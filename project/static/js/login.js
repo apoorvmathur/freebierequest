@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	
+	host = "http://indiafactorial.olxcorp.com:6442"
+	
 	if(localStorage.user != null && localStorage.token != null) {
 		window.location.replace("request.html");
 	}
@@ -18,7 +20,7 @@ $(document).ready(function(){
 		pass = $.sha1(password)
 		console.log(pass)
 		
-		$.post("http://192.168.133.169:8000/user/", {user: user, password:pass}, function(data, status){
+		$.post(host+"/user/", {user: user, password:pass}, function(data, status){
 			console.log(data)
 			
 			if(data["auth"]) {

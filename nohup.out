@@ -1,0 +1,353 @@
+[22/Jun/2018 04:39:28] "GET /freebie/login.html HTTP/1.1" 304 0
+[22/Jun/2018 04:39:28] "GET /freebie/css/bootstrap.css HTTP/1.1" 304 0
+[22/Jun/2018 04:39:28] "GET /freebie/js/jquery.js HTTP/1.1" 304 0
+[22/Jun/2018 04:39:28] "GET /freebie/css/style.css HTTP/1.1" 304 0
+[22/Jun/2018 04:39:28] "GET /freebie/js/popper.js HTTP/1.1" 304 0
+[22/Jun/2018 04:39:28] "GET /freebie/js/bootstrap.js HTTP/1.1" 304 0
+[22/Jun/2018 04:39:28] "GET /freebie/js/sha1.js HTTP/1.1" 304 0
+[22/Jun/2018 04:39:28] "GET /freebie/js/login.js HTTP/1.1" 304 0
+[22/Jun/2018 04:39:33] "POST /user/ HTTP/1.1" 200 14
+[22/Jun/2018 04:39:36] "GET /freebie/js/popper.js.map HTTP/1.1" 404 1781
+[22/Jun/2018 04:39:36] "GET /freebie/js/bootstrap.js.map HTTP/1.1" 404 1790
+[22/Jun/2018 04:46:25] "GET /freebie/login.html HTTP/1.1" 200 1714
+[22/Jun/2018 04:46:25] "GET /freebie/css/style.css HTTP/1.1" 200 1021
+[22/Jun/2018 04:46:25] "GET /freebie/js/sha1.js HTTP/1.1" 200 6282
+[22/Jun/2018 04:46:25] "GET /freebie/js/login.js HTTP/1.1" 200 845
+[22/Jun/2018 04:46:25] "GET /freebie/js/popper.js HTTP/1.1" 200 87139
+[22/Jun/2018 04:46:25] "GET /freebie/js/bootstrap.js HTTP/1.1" 200 115048
+[22/Jun/2018 04:46:25] "GET /freebie/css/bootstrap.css HTTP/1.1" 200 192413
+[22/Jun/2018 04:46:25] "GET /freebie/js/jquery.js HTTP/1.1" 200 282113
+[22/Jun/2018 04:46:26] "GET /freebie/js/popper.js.map HTTP/1.1" 404 1781
+[22/Jun/2018 04:46:26] "GET /freebie/js/bootstrap.js.map HTTP/1.1" 404 1790
+[22/Jun/2018 05:56:05] "GET /freebie/index.html HTTP/1.1" 304 0
+[22/Jun/2018 05:56:05] "GET /freebie/css/style.css HTTP/1.1" 304 0
+[22/Jun/2018 05:56:05] "GET /freebie/css/bootstrap.css HTTP/1.1" 304 0
+[22/Jun/2018 05:56:05] "GET /freebie/css/bootstrap-select.css HTTP/1.1" 304 0
+[22/Jun/2018 05:56:05] "GET /freebie/js/jquery.js HTTP/1.1" 304 0
+[22/Jun/2018 05:56:08] "GET /freebie/js/popper.js HTTP/1.1" 304 0
+[22/Jun/2018 05:56:08] "GET /freebie/js/bootstrap.js HTTP/1.1" 304 0
+[22/Jun/2018 05:56:08] "GET /freebie/js/bootstrap-select.js HTTP/1.1" 304 0
+[22/Jun/2018 05:56:08] "GET /freebie/js/app.js HTTP/1.1" 304 0
+[22/Jun/2018 05:56:08] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 05:56:10] "GET /freebie HTTP/1.1" 301 0
+[22/Jun/2018 05:56:10] "GET /freebie/ HTTP/1.1" 404 1743
+[22/Jun/2018 05:56:19] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 05:56:27] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 05:56:32] "GET /freebie/pending.html HTTP/1.1" 304 0
+[22/Jun/2018 05:56:32] "GET /freebie/js/pending.js HTTP/1.1" 304 0
+[22/Jun/2018 05:56:33] "POST /request/ HTTP/1.1" 200 863
+[22/Jun/2018 06:02:47] "GET /freebie/index.html HTTP/1.1" 200 5550
+[22/Jun/2018 06:02:47] "GET /freebie/css/style.css HTTP/1.1" 200 1021
+[22/Jun/2018 06:02:47] "GET /freebie/css/bootstrap.css HTTP/1.1" 200 192413
+[22/Jun/2018 06:02:47] "GET /freebie/css/bootstrap-select.css HTTP/1.1" 200 7768
+[22/Jun/2018 06:02:47] "GET /freebie/js/popper.js HTTP/1.1" 200 87139
+[22/Jun/2018 06:02:47] "GET /freebie/js/bootstrap.js HTTP/1.1" 200 115048
+[22/Jun/2018 06:02:47] "GET /freebie/js/bootstrap-select.js HTTP/1.1" 200 68914
+[22/Jun/2018 06:02:47] "GET /freebie/js/jquery.js HTTP/1.1" 200 282113
+[22/Jun/2018 06:02:50] "GET /freebie/js/app.js HTTP/1.1" 200 7369
+Not Found: /favicon.ico
+[22/Jun/2018 06:02:51] "GET /favicon.ico HTTP/1.1" 404 2934
+[22/Jun/2018 06:02:51] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 06:12:39] "POST /request/ HTTP/1.1" 200 20
+[22/Jun/2018 06:13:12] "POST /user/ HTTP/1.1" 200 14
+[22/Jun/2018 06:13:39] "POST /user/ HTTP/1.1" 200 14
+[22/Jun/2018 06:14:06] "POST /user/ HTTP/1.1" 200 14
+[22/Jun/2018 06:14:41] "POST /user/ HTTP/1.1" 200 14
+[22/Jun/2018 06:15:06] "POST /user/ HTTP/1.1" 200 54
+[22/Jun/2018 06:15:06] "GET /freebie/pending.html HTTP/1.1" 200 2128
+[22/Jun/2018 06:15:06] "GET /freebie/css/style.css HTTP/1.1" 200 1021
+[22/Jun/2018 06:15:06] "GET /freebie/js/popper.js HTTP/1.1" 200 87139
+[22/Jun/2018 06:15:06] "GET /freebie/js/pending.js HTTP/1.1" 200 3344
+[22/Jun/2018 06:15:06] "GET /freebie/css/bootstrap.css HTTP/1.1" 200 192413
+[22/Jun/2018 06:15:06] "GET /freebie/js/bootstrap.js HTTP/1.1" 200 115048
+[22/Jun/2018 06:15:06] "GET /freebie/js/jquery.js HTTP/1.1" 200 282113
+[22/Jun/2018 06:15:08] "GET /freebie/js/popper.js.map HTTP/1.1" 404 1781
+[22/Jun/2018 06:15:08] "GET /freebie/js/bootstrap.js.map HTTP/1.1" 404 1790
+[22/Jun/2018 06:15:10] "POST /request/ HTTP/1.1" 200 863
+[22/Jun/2018 06:15:19] "GET /freebie/request.html HTTP/1.1" 304 0
+[22/Jun/2018 06:15:19] "GET /freebie/js/request.js HTTP/1.1" 304 0
+[22/Jun/2018 06:15:21] "POST /request/ HTTP/1.1" 200 863
+[22/Jun/2018 06:16:53] "POST /user/ HTTP/1.1" 200 54
+[22/Jun/2018 06:16:55] "POST /request/ HTTP/1.1" 200 863
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 22, 2018 - 04:03:23
+Django version 2.0.6, using settings 'config.settings.local'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+<QueryDict: {'user': ['apoorv'], 'password': ['cce8b46b04a2c96699b0e41b4ac5954f22bef158']}>
+<QueryDict: {'user': ['rohitverma'], 'token': ['b19c4270d4cc53aa508400c102c1ff']}>
+True
+(3,)
+Level: 3
+((datetime.datetime(2018, 6, 21, 5, 25, 4), 1, 'Cify Francis', 'Real Estate', 129081, 7906518368, datetime.date(2018, 6, 13), datetime.date(2018, 6, 30), 10000, 5000, 2000, 20.0, '', 'jkjhdlsaflhsdfhakshdfkjs', 'Pending', None, None), (datetime.datetime(2018, 6, 21, 11, 13, 25), 2, 'Raman', 'Electronics & Appliances', 1234567, 9999999999, datetime.date(2018, 6, 27), datetime.date(2018, 7, 3), 10000, 5000, 2000, 20.0, '', 'fyy', 'Approved', '', 'rohitverma'))
+{'created_at': datetime.datetime(2018, 6, 21, 5, 25, 4), 'id': 1, 'agent_name': 'Cify Francis', 'category': 'Real Estate', 'user_id': 129081, 'account_phone': 7906518368, 'sales_date': datetime.date(2018, 6, 13), 'activation_date': datetime.date(2018, 6, 30), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'jkjhdlsaflhsdfhakshdfkjs', 'status': 'Pending', 'comment': None, 'updated_by': None}
+{'created_at': datetime.datetime(2018, 6, 21, 11, 13, 25), 'id': 2, 'agent_name': 'Raman', 'category': 'Electronics & Appliances', 'user_id': 1234567, 'account_phone': 9999999999, 'sales_date': datetime.date(2018, 6, 27), 'activation_date': datetime.date(2018, 7, 3), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'fyy', 'status': 'Approved', 'comment': '', 'updated_by': 'rohitverma'}
+<QueryDict: {'user': ['m2'], 'token': ['0b40d9991ed7679c86c134090d5a21']}>
+False
+<QueryDict: {'user': ['aproov.mathur@olx.com'], 'password': ['cce8b46b04a2c96699b0e41b4ac5954f22bef158']}>
+<QueryDict: {'user': ['aproov.mathur@olx.com'], 'password': ['6b6c8ea5f39015035ff98766f0979856f9bfa851']}>
+<QueryDict: {'user': ['aproov.mathur@olx.com'], 'password': ['6b6c8ea5f39015035ff98766f0979856f9bfa851']}>
+<QueryDict: {'user': ['apoorv'], 'password': ['41a1bbad03cc59e99da9d71bced02cdd19d0ffdf']}>
+<QueryDict: {'user': ['rohitverma'], 'password': ['41a1bbad03cc59e99da9d71bced02cdd19d0ffdf']}>
+<QueryDict: {'user': ['rohitverma'], 'token': ['072a6a92b96841f6ca44e5d3aa3f6c']}>
+True
+(3,)
+Level: 3
+((datetime.datetime(2018, 6, 21, 5, 25, 4), 1, 'Cify Francis', 'Real Estate', 129081, 7906518368, datetime.date(2018, 6, 13), datetime.date(2018, 6, 30), 10000, 5000, 2000, 20.0, '', 'jkjhdlsaflhsdfhakshdfkjs', 'Pending', None, None), (datetime.datetime(2018, 6, 21, 11, 13, 25), 2, 'Raman', 'Electronics & Appliances', 1234567, 9999999999, datetime.date(2018, 6, 27), datetime.date(2018, 7, 3), 10000, 5000, 2000, 20.0, '', 'fyy', 'Approved', '', 'rohitverma'))
+{'created_at': datetime.datetime(2018, 6, 21, 5, 25, 4), 'id': 1, 'agent_name': 'Cify Francis', 'category': 'Real Estate', 'user_id': 129081, 'account_phone': 7906518368, 'sales_date': datetime.date(2018, 6, 13), 'activation_date': datetime.date(2018, 6, 30), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'jkjhdlsaflhsdfhakshdfkjs', 'status': 'Pending', 'comment': None, 'updated_by': None}
+{'created_at': datetime.datetime(2018, 6, 21, 11, 13, 25), 'id': 2, 'agent_name': 'Raman', 'category': 'Electronics & Appliances', 'user_id': 1234567, 'account_phone': 9999999999, 'sales_date': datetime.date(2018, 6, 27), 'activation_date': datetime.date(2018, 7, 3), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'fyy', 'status': 'Approved', 'comment': '', 'updated_by': 'rohitverma'}
+<QueryDict: {'user': ['rohitverma'], 'token': ['072a6a92b96841f6ca44e5d3aa3f6c']}>
+True
+(3,)
+Level: 3
+((datetime.datetime(2018, 6, 21, 5, 25, 4), 1, 'Cify Francis', 'Real Estate', 129081, 7906518368, datetime.date(2018, 6, 13), datetime.date(2018, 6, 30), 10000, 5000, 2000, 20.0, '', 'jkjhdlsaflhsdfhakshdfkjs', 'Pending', None, None), (datetime.datetime(2018, 6, 21, 11, 13, 25), 2, 'Raman', 'Electronics & Appliances', 1234567, 9999999999, datetime.date(2018, 6, 27), datetime.date(2018, 7, 3), 10000, 5000, 2000, 20.0, '', 'fyy', 'Approved', '', 'rohitverma'))
+{'created_at': datetime.datetime(2018, 6, 21, 5, 25, 4), 'id': 1, 'agent_name': 'Cify Francis', 'category': 'Real Estate', 'user_id': 129081, 'account_phone': 7906518368, 'sales_date': datetime.date(2018, 6, 13), 'activation_date': datetime.date(2018, 6, 30), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'jkjhdlsaflhsdfhakshdfkjs', 'status': 'Pending', 'comment': None, 'updated_by': None}
+{'created_at': datetime.datetime(2018, 6, 21, 11, 13, 25), 'id': 2, 'agent_name': 'Raman', 'category': 'Electronics & Appliances', 'user_id': 1234567, 'account_phone': 9999999999, 'sales_date': datetime.date(2018, 6, 27), 'activation_date': datetime.date(2018, 7, 3), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'fyy', 'status': 'Approved', 'comment': '', 'updated_by': 'rohitverma'}
+<QueryDict: {'user': ['apoorvmathur'], 'password': ['6b6c8ea5f39015035ff98766f0979856f9bfa851']}>
+<QueryDict: {'user': ['apoorvmathur'], 'token': ['b5a3d3a5387a1740254a4f192ea980']}>
+True
+(3,)
+Level: 3
+((datetime.datetime(2018, 6, 21, 5, 25, 4), 1, 'Cify Francis', 'Real Estate', 129081, 7906518368, datetime.date(2018, 6, 13), datetime.date(2018, 6, 30), 10000, 5000, 2000, 20.0, '', 'jkjhdlsaflhsdfhakshdfkjs', 'Pending', None, None), (datetime.datetime(2018, 6, 21, 11, 13, 25), 2, 'Raman', 'Electronics & Appliances', 1234567, 9999999999, datetime.date(2018, 6, 27), datetime.date(2018, 7, 3), 10000, 5000, 2000, 20.0, '', 'fyy', 'Approved', '', 'rohitverma'))
+{'created_at': datetime.datetime(2018, 6, 21, 5, 25, 4), 'id': 1, 'agent_name': 'Cify Francis', 'category': 'Real Estate', 'user_id': 129081, 'account_phone': 7906518368, 'sales_date': datetime.date(2018, 6, 13), 'activation_date': datetime.date(2018, 6, 30), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'jkjhdlsaflhsdfhakshdfkjs', 'status': 'Pending', 'comment': None, 'updated_by': None}
+{'created_at': datetime.datetime(2018, 6, 21, 11, 13, 25), 'id': 2, 'agent_name': 'Raman', 'category': 'Electronics & Appliances', 'user_id': 1234567, 'account_phone': 9999999999, 'sales_date': datetime.date(2018, 6, 27), 'activation_date': datetime.date(2018, 7, 3), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'fyy', 'status': 'Approved', 'comment': '', 'updated_by': 'rohitverma'}
+<QueryDict: {'user': ['apoorvmathur'], 'token': ['b5a3d3a5387a1740254a4f192ea980']}>
+True
+(3,)
+Level: 3
+((datetime.datetime(2018, 6, 21, 5, 25, 4), 1, 'Cify Francis', 'Real Estate', 129081, 7906518368, datetime.date(2018, 6, 13), datetime.date(2018, 6, 30), 10000, 5000, 2000, 20.0, '', 'jkjhdlsaflhsdfhakshdfkjs', 'Pending', None, None), (datetime.datetime(2018, 6, 21, 11, 13, 25), 2, 'Raman', 'Electronics & Appliances', 1234567, 9999999999, datetime.date(2018, 6, 27), datetime.date(2018, 7, 3), 10000, 5000, 2000, 20.0, '', 'fyy', 'Approved', '', 'rohitverma'))
+{'created_at': datetime.datetime(2018, 6, 21, 5, 25, 4), 'id': 1, 'agent_name': 'Cify Francis', 'category': 'Real Estate', 'user_id': 129081, 'account_phone': 7906518368, 'sales_date': datetime.date(2018, 6, 13), 'activation_date': datetime.date(2018, 6, 30), 'sales_amount': 10000, 'prev_sales': 5000, 'discount_amount': 2000, 'discount_percent': 20.0, 'alternate_number': '', 'discussion_details': 'jkjhdlsaflhsdfhakshdfkjs', 'status': 'Pending', 'comment': None, 'updated_by': None}[22/Jun/2018 06:17:00] "POST /request/ HTTP/1.1" 200 863
+[22/Jun/2018 06:17:53] "POST /user/ HTTP/1.1" 200 54
+[22/Jun/2018 06:17:56] "POST /request/ HTTP/1.1" 200 863
+[22/Jun/2018 06:18:09] "POST /user/ HTTP/1.1" 200 14
+[22/Jun/2018 06:19:15] "POST /user/ HTTP/1.1" 200 14
+[22/Jun/2018 06:19:23] "POST /user/ HTTP/1.1" 200 14
+[22/Jun/2018 06:33:36] "GET /freebie/pending.html HTTP/1.1" 200 2128
+[22/Jun/2018 06:33:36] "GET /freebie/css/style.css HTTP/1.1" 200 1021
+[22/Jun/2018 06:33:36] "GET /freebie/js/popper.js HTTP/1.1" 200 87139
+[22/Jun/2018 06:33:36] "GET /freebie/js/bootstrap.js HTTP/1.1" 200 115048
+[22/Jun/2018 06:33:36] "GET /freebie/css/bootstrap.css HTTP/1.1" 200 192413
+[22/Jun/2018 06:33:36] "GET /freebie/js/jquery.js HTTP/1.1" 200 282113
+[22/Jun/2018 06:33:39] "GET /freebie/js/pending.js HTTP/1.1" 200 3344
+Internal Server Error: /request/
+Traceback (most recent call last):
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/admin/Apoorv/freebierequest/project/api/views.py", line 27, in post
+    userId = userData["user"]
+KeyError: 'user'
+[22/Jun/2018 06:33:39] "POST /request/ HTTP/1.1" 500 15891
+[22/Jun/2018 06:33:39] "GET /freebie/login.html HTTP/1.1" 200 1714
+[22/Jun/2018 06:33:39] "GET /freebie/js/sha1.js HTTP/1.1" 200 6282
+[22/Jun/2018 06:33:39] "GET /freebie/js/login.js HTTP/1.1" 200 845
+Not Found: /favicon.ico
+[22/Jun/2018 06:33:39] "GET /favicon.ico HTTP/1.1" 404 2934
+[22/Jun/2018 06:36:43] "GET /freebie/index.html HTTP/1.1" 200 5550
+[22/Jun/2018 06:36:43] "GET /freebie/css/style.css HTTP/1.1" 200 1021
+[22/Jun/2018 06:36:43] "GET /freebie/css/bootstrap-select.css HTTP/1.1" 200 7768
+[22/Jun/2018 06:36:43] "GET /freebie/js/popper.js HTTP/1.1" 200 87139
+[22/Jun/2018 06:36:43] "GET /freebie/js/bootstrap-select.js HTTP/1.1" 200 68914
+[22/Jun/2018 06:36:43] "GET /freebie/js/jquery.js HTTP/1.1" 200 282113
+[22/Jun/2018 06:36:43] "GET /freebie/css/bootstrap.css HTTP/1.1" 200 192413
+[22/Jun/2018 06:36:43] "GET /freebie/js/bootstrap.js HTTP/1.1" 200 115048
+[22/Jun/2018 06:36:43] "GET /freebie/js/app.js HTTP/1.1" 200 7369
+[22/Jun/2018 06:36:48] "POST /agents/ HTTP/1.1" 200 1339
+Not Found: /favicon.ico
+[22/Jun/2018 06:36:48] "GET /favicon.ico HTTP/1.1" 404 2934
+[22/Jun/2018 06:37:43] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 06:53:22] "GET /freebie/index.html HTTP/1.1" 200 5550
+[22/Jun/2018 06:53:23] "GET /freebie/css/bootstrap.css HTTP/1.1" 304 0
+[22/Jun/2018 06:53:23] "GET /freebie/css/style.css HTTP/1.1" 304 0
+[22/Jun/2018 06:53:23] "GET /freebie/css/bootstrap-select.css HTTP/1.1" 200 7768
+[22/Jun/2018 06:53:25] "GET /freebie/js/jquery.js HTTP/1.1" 304 0
+[22/Jun/2018 06:53:25] "GET /freebie/js/bootstrap.js HTTP/1.1" 304 0
+[22/Jun/2018 06:53:25] "GET /freebie/js/app.js HTTP/1.1" 304 0
+[22/Jun/2018 06:53:25] "GET /freebie/js/popper.js HTTP/1.1" 304 0
+[22/Jun/2018 06:53:25] "GET /freebie/js/bootstrap-select.js HTTP/1.1" 304 0
+[22/Jun/2018 06:53:27] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 06:54:46] "GET /freebie/index.html HTTP/1.1" 304 0
+[22/Jun/2018 06:54:50] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 07:03:12] "GET /freebie/index.html HTTP/1.1" 200 5550
+[22/Jun/2018 07:03:13] "GET /freebie/css/style.css HTTP/1.1" 200 1021
+[22/Jun/2018 07:03:13] "GET /freebie/css/bootstrap-select.css HTTP/1.1" 200 7768
+[22/Jun/2018 07:03:13] "GET /freebie/js/popper.js HTTP/1.1" 200 87139
+[22/Jun/2018 07:03:13] "GET /freebie/js/bootstrap-select.js HTTP/1.1" 200 68914
+[22/Jun/2018 07:03:13] "GET /freebie/css/bootstrap.css HTTP/1.1" 200 192413
+[22/Jun/2018 07:03:14] "GET /freebie/js/bootstrap.js HTTP/1.1" 200 115048
+[22/Jun/2018 07:03:15] "GET /freebie/js/jquery.js HTTP/1.1" 200 282113
+[22/Jun/2018 07:03:15] "GET /freebie/js/app.js HTTP/1.1" 200 7369
+[22/Jun/2018 07:03:18] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 07:03:24] "POST /agents/ HTTP/1.1" 200 1339
+[22/Jun/2018 07:07:04] "POST /user/ HTTP/1.1" 200 14
+Not Found: /
+[22/Jun/2018 07:24:53] "GET / HTTP/1.1" 404 2894
+Not Found: /favicon.ico
+[22/Jun/2018 07:24:53] "GET /favicon.ico HTTP/1.1" 404 2945
+Not Found: /
+[22/Jun/2018 07:25:12] "GET / HTTP/1.1" 404 2894
+Not Found: /
+[22/Jun/2018 07:25:31] "GET / HTTP/1.1" 404 2894
+Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/admin/Apoorv/freebierequest/project/api/views.py", line 15, in post
+    auth = methods.authenticate(userData["user"], userData["password"])
+  File "/home/admin/Apoorv/freebierequest/project/api/methods.py", line 6, in authenticate
+    cursor = tasks.getDBCursor()
+  File "/home/admin/Apoorv/freebierequest/project/api/tasks.py", line 12, in getDBCursor
+    connection = sql.connect(user="biindia", password="299A9052D0E6", host="pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com", port=3306)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com' (110)")
+[22/Jun/2018 07:28:04] "POST /user/ HTTP/1.1" 500 16843
+[22/Jun/2018 07:39:10] "GET /freebie/js/popper.js.map HTTP/1.1" 404 1781
+[22/Jun/2018 07:39:10] "GET /freebie/js/bootstrap.js.map HTTP/1.1" 404 1790
+[22/Jun/2018 07:39:20] "GET /freebie/login.html HTTP/1.1" 200 1714
+[22/Jun/2018 07:39:21] "GET /freebie/css/style.css HTTP/1.1" 200 1021
+[22/Jun/2018 07:39:21] "GET /freebie/js/popper.js HTTP/1.1" 200 87139
+[22/Jun/2018 07:39:21] "GET /freebie/js/sha1.js HTTP/1.1" 200 6282
+[22/Jun/2018 07:39:21] "GET /freebie/css/bootstrap.css HTTP/1.1" 200 192413
+[22/Jun/2018 07:39:21] "GET /freebie/js/login.js HTTP/1.1" 200 845
+[22/Jun/2018 07:39:21] "GET /freebie/js/bootstrap.js HTTP/1.1" 200 115048
+[22/Jun/2018 07:39:21] "GET /freebie/js/jquery.js HTTP/1.1" 200 282113
+[22/Jun/2018 07:39:22] "GET /freebie/js/popper.js.map HTTP/1.1" 404 1781
+[22/Jun/2018 07:39:22] "GET /freebie/js/bootstrap.js.map HTTP/1.1" 404 1790
+Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/admin/Apoorv/freebierequest/project/api/views.py", line 15, in post
+    auth = methods.authenticate(userData["user"], userData["password"])
+  File "/home/admin/Apoorv/freebierequest/project/api/methods.py", line 6, in authenticate
+    cursor = tasks.getDBCursor()
+  File "/home/admin/Apoorv/freebierequest/project/api/tasks.py", line 12, in getDBCursor
+    connection = sql.connect(user="biindia", password="299A9052D0E6", host="pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com", port=3306)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com' (110)")
+[22/Jun/2018 07:41:15] "POST /user/ HTTP/1.1" 500 16883
+Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/admin/Apoorv/freebierequest/project/api/views.py", line 15, in post
+    auth = methods.authenticate(userData["user"], userData["password"])
+  File "/home/admin/Apoorv/freebierequest/project/api/methods.py", line 6, in authenticate
+    cursor = tasks.getDBCursor()
+  File "/home/admin/Apoorv/freebierequest/project/api/tasks.py", line 12, in getDBCursor
+    connection = sql.connect(user="biindia", password="299A9052D0E6", host="pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com", port=3306)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com' (110)")
+[22/Jun/2018 07:41:17] "POST /user/ HTTP/1.1" 500 16884
+Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/admin/Apoorv/freebierequest/project/api/views.py", line 15, in post
+    auth = methods.authenticate(userData["user"], userData["password"])
+  File "/home/admin/Apoorv/freebierequest/project/api/methods.py", line 6, in authenticate
+    cursor = tasks.getDBCursor()
+  File "/home/admin/Apoorv/freebierequest/project/api/tasks.py", line 12, in getDBCursor
+    connection = sql.connect(user="biindia", password="299A9052D0E6", host="pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com", port=3306)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/admin/Env/django-env/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com' (110)")
+[22/Jun/2018 07:41:35] "POST /user/ HTTP/1.1" 500 16941
+Not Found: /
+[22/Jun/2018 07:45:32] "GET / HTTP/1.1" 404 2894
+Not Found: /favicon.ico
+[22/Jun/2018 07:45:33] "GET /favicon.ico HTTP/1.1" 404 2945
+Not Found: /
+[22/Jun/2018 07:45:40] "GET / HTTP/1.1" 404 2894
+[22/Jun/2018 07:49:54] "GET /freebie/login.html HTTP/1.1" 200 1714
+[22/Jun/2018 07:49:54] "GET /freebie/css/style.css HTTP/1.1" 200 1021
+[22/Jun/2018 07:49:54] "GET /freebie/js/sha1.js HTTP/1.1" 200 6282
+[22/Jun/2018 07:49:54] "GET /freebie/css/bootstrap.css HTTP/1.1" 200 192413
+[22/Jun/2018 07:49:54] "GET /freebie/js/login.js HTTP/1.1" 200 845
+[22/Jun/2018 07:49:54] "GET /freebie/js/popper.js HTTP/1.1" 200 87139
+[22/Jun/2018 07:49:54] "GET /freebie/js/bootstrap.js HTTP/1.1" 200 115048
+[22/Jun/2018 07:49:54] "GET /freebie/js/jquery.js HTTP/1.1" 200 282113
+[22/Jun/2018 07:49:55] "GET /freebie/js/popper.js.map HTTP/1.1" 404 1781
+[22/Jun/2018 07:49:55] "GET /freebie/js/bootstrap.js.map HTTP/1.1" 404 1790

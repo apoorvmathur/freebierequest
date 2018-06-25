@@ -1,5 +1,5 @@
 var cards = 0;
-
+host = "http://indiafactorial.olxcorp.com:6442"
 var approve = function(id) {
 	var user = localStorage.user;
 	var token = localStorage.token;
@@ -7,7 +7,7 @@ var approve = function(id) {
 	var comment_text = $('#comment-'+id).val()
 	console.log("Approve: "+id+" Comment: " +comment_text)
 	
-	$.post("http://192.168.133.169:8000/update/", {user: user, token:token, id:id, status:"Approved", comment:comment_text}, function(data, status){
+	$.post(host+"/update/", {user: user, token:token, id:id, status:"Approved", comment:comment_text}, function(data, status){
 		console.log(status)
 	})
 	$("#card-"+id).remove()
@@ -26,7 +26,7 @@ var reject = function(id) {
 	
 	var comment_text = $('#comment-'+id).val()
 	
-	$.post("http://192.168.133.169:8000/update/", {user: user, token:token, id:id, status:"Rejected", comment:comment_text}, function(data, status){
+	$.post(host+"/update/", {user: user, token:token, id:id, status:"Rejected", comment:comment_text}, function(data, status){
 		console.log(status)
 	})
 	console.log("Reject "+id)
@@ -53,7 +53,7 @@ $(document).ready(function(){
 	
 	console.log(token)
 	
-	$.post("http://192.168.133.169:8000/request/", {user: user, token:token}, function(data, status){
+	$.post(host+"/request/", {user: user, token:token}, function(data, status){
 		console.log(data)
 		var request_list = data["data"];
 		console.log(request_list)

@@ -1,6 +1,8 @@
 var alternate_numbers = 0;
 var alternate_numbers_list = [];
 
+var host = "http://indiafactorial.olxcorp.com:6442"
+
 var remove = function(index) {
 	console.log(alternate_numbers_list)
 	$("#alternate_phone_div_"+index).remove()
@@ -28,7 +30,7 @@ $(document).ready(function(){
 	
 	console.log("Fetching agents")
 	
-	$.post("http://192.168.133.169:8000/agents/",{}, function(data, status) {
+	$.post(host+"/agents/",{}, function(data, status) {
 		agent_list = data.agents;
 		console.log(agent_list)
 		for(i in agent_list){
@@ -167,7 +169,7 @@ $(document).ready(function(){
 		request_param["alternate_number"]=alternate_numbers_string
 		request_param["status"]="Pending"
 		
-		$.post("http://192.168.133.169:8000/insert/", request_param, function(data, status){
+		$.post(host+"/insert/", request_param, function(data, status){
 			$("#success-section").show();
 			$("#form-section").hide();
 		})
