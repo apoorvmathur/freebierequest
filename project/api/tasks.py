@@ -12,6 +12,9 @@ class tasks:
             connection = sql.connect(user="biindia", password="299A9052D0E6", host="pms-db.ccee0gkyjvah.ap-southeast-1.rds.amazonaws.com", port=3306)
             connection.autocommit(True)
         cursor = connection.cursor()
+        if not(tasks.testCon(cursor)):
+            connection.close()
+            return tasks.getDBCursor()
         return cursor
 
     def generateToken(user):
@@ -21,3 +24,15 @@ class tasks:
                        {"token":token, "username":user})
         cursor.close()
         return token
+
+    def testCon(cursor):
+        try:
+            cursor.execute("show databases")
+            test_result = cursor.fetchall()
+            return True
+        except cursor.OperationalError as e:
+            if (e.args[0] == 2006):
+                print("Connection Gaya!")
+                return False
+            else:
+                raise e

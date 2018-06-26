@@ -1,6 +1,6 @@
 #top-bar {
 	display:block;
-	height:287px;
+	height:187px;
 	width:100%;
 	top:0px;
 	position:absolute;
@@ -9,7 +9,7 @@
 
 .main-container {
 	position:relative;
-	top:200px;
+	top:100px;
 	min-height:200px;
 }
 

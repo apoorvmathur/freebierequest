@@ -114,9 +114,9 @@ class methods:
         for result in results:
             if result['status'] != 'Pending' or userlevel == 0:
                 result['action'] = False
-            elif userlevel == 1 and float(result['discount_percent']) <= 15:
+            elif userlevel == 1 and float(result['discount_percent']) < 16:
                 result['action'] = True
-            elif userlevel == 2 and float(result['discount_percent']) <= 25:
+            elif userlevel == 2 and float(result['discount_percent']) < 26:
                 result['action'] = True
             elif userlevel == 3:
                 result['action'] = True
